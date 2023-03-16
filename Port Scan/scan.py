@@ -21,7 +21,7 @@ try:
         socket.setdefaulttimeout(1)
         result = socket.connect_ex((target,port))
         if result == 0:
-            print(f"Port {port} is open")
+            print(f"Port {port} is open @ time: {str(datetime.now())}")
         sox.close
 #Errors
 except KeyboardInterrupt:
